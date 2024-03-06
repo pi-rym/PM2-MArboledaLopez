@@ -1,0 +1,88 @@
+/*---------------------------------------GENERAL----------------------------------*/
+
+@font-face {
+    font-family: 'MadimiOne';
+    src: url('./MadimiOne-Regular.ttf') format('truetype');
+}
+
+html{
+    height: fit-content;
+    width: 98.68%;
+}
+
+body{
+    border:8px solid #48a9a67c;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    color: #345995;
+    font-family: 'MadimiOne', sans-serif;
+}
+
+#Bodey{
+    /*height: 100vh;*/
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), black);
+    background-color: #14342B;
+}
+
+#M2Ptitle{
+    display: flex;
+    justify-content: space-evenly;
+    font-style: italic;
+    font-size: 2em;
+}
+
+#routes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.routes{
+    border: 3px solid green;
+    border-radius: 15px;
+    margin: 1%;
+    padding: 6px;
+    color: rgba(250, 0, 250, 0.705);
+}
+
+/*---------------------------------------HOME PAGE----------------------------------*/
+
+#pg1Img{
+    border: 7px solid #14342B;
+    border-radius: 30px;
+    width: 90%;
+    height: fit-content;
+    margin: 1%;
+}
+#DuneBackground{
+    width: 100%;
+    border-radius: 23px;
+}
+
+#imagestuff{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pt1imgfooter{
+    font-size: 0.7em;
+    padding: 0px 0px 0px 20px;
+}
+
+#filmcontainer{
+    border: 5px solid red;
+    margin: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: 17.5em;
+}
+
+#moviesbutton{
+    font-size: 0.6em;
+}
+
+/*---------------------------------------SOBRE M2P----------------------------------*/
+
