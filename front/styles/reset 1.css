@@ -8,7 +8,6 @@
 }
 
 /* Remove default margin */
-body,
 h1,
 h2,
 h3,
@@ -33,7 +32,7 @@ ol {
   list-style: none;
 }
 
-/* Remove default padding */
+/* Remove default padding for specific elements */
 body,
 figure {
   padding: 0;
