@@ -72,7 +72,6 @@ body{
 }
 
 #filmcontainer{
-    border: 5px solid red;
     margin: 2%;
     display: flex;
     justify-content: space-evenly;
@@ -215,3 +214,132 @@ img[alt='Soap2Day']{
 .container .box:hover .content p {
     transform: translateY(0px);
 }
+
+.box-link {
+  text-decoration: none;
+}
+
+.box-link:hover .box {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+.box-link:hover {
+  cursor: pointer;
+}
+
+/*---------------------------------------TARJETAS DE PELICULAS-HOME PAGE----------------------------------*/
+
+#filmcontainer {
+    position: relative;
+    width: 1160px;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+}
+  
+#filmcontainer .tarjeta {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    background: #000;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+  
+#filmcontainer:hover .tarjeta {
+    transform: rotateY(25deg);
+}
+  
+#filmcontainer .tarjeta:hover ~ .tarjeta {
+    transform: rotateY(-25deg);
+}
+  
+#filmcontainer .tarjeta:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+  
+#filmcontainer .tarjeta .cajaimagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+#filmcontainer .tarjeta .cajaimagen:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #345995, #000);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+}
+  
+#filmcontainer .tarjeta:hover .cajaimagen:before {
+    opacity: 1;
+}
+  
+#filmcontainer .tarjeta .cajaimagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+#filmcontainer .tarjeta .contenidos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+  
+#filmcontainer .tarjeta .contenidos h2 {
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+}
+  
+#filmcontainer .tarjeta:hover .contenidos h2 {
+    transform: translateY(0px);
+}
+  
+#filmcontainer .tarjeta .contenidos p {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+}
+  
+#filmcontainer .tarjeta:hover .contenidos p {
+    transform: translateY(0px);
+}
+  
