@@ -2,7 +2,7 @@ $(document).ready(function() {
   const filmContainer = $("#filmcontainer");
 
   
-  $.get("https://students-api.2.us-1.fl0.io/movies", function(data) {
+  $.get("https://students-api.up.railway.app/movies", function(data) {
       
       if (Array.isArray(data)) {
           
