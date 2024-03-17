@@ -1,0 +1,14 @@
+{
+  "name": "challenge-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index1.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "mateo",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
