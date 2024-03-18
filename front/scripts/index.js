@@ -4,7 +4,7 @@ import { fetchData } from './dataFetch.js';
 import { renderMovies } from './renderCards.js';
 
 $(document).ready(function() {
-  const apiUrl = "https://students-api.up.railway.app/movies";
+  const apiUrl = "http://localhost:3000";
 
   fetchData(apiUrl, renderMovies, console.error);
 });
