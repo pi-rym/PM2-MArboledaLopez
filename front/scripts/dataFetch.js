@@ -1,16 +1,19 @@
 // data fetch module
 
-const fetchData = function(url, successCallback, errorCallback) {
-    $.get(url, function(data) {
-      if (Array.isArray(data)) {
-        successCallback(data);
-      } else {
-        errorCallback("No es un array :/.");
-      }
-    }).fail(function() {
-      errorCallback("No se pudo acceder a los datos de las peliculas.");
-    });
-  };
-  
-  export { fetchData };
-  
+import axios from 'axios';
+
+const fetchData = async function(url, successCallback, errorCallback) {
+  try {
+    const response = await axios.get(url);
+    
+    if (Array.isArray(response.data)) {
+      successCallback(response.data);
+    } else {
+      errorCallback("No es un array :/.");
+    }
+  } catch (error) {
+    errorCallback("No se pudo acceder a los datos de las películas.");
+  }
+};
+
+export { fetchData };
