@@ -9,6 +9,7 @@ const movieService = {
             throw new Error("Failed to fetch movie data: " + error.message);
         }
     }
+
 };
 
 module.exports = movieService;
