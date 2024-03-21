@@ -239,7 +239,7 @@ img[alt='Soap2Day']{
 #filmcontainer {
     position: relative;
     width: 1160px;
-    height: 30em;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -358,6 +358,7 @@ img[alt='Soap2Day']{
     font-family: 'Poppins', sans-serif;
     background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
   
@@ -388,6 +389,7 @@ img[alt='Soap2Day']{
     font-family: 'Poppins', sans-serif;
     background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
     
