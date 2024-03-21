@@ -22,23 +22,23 @@ function submitForm() {
         return;
     }
 
-    const formData = {
+    const movie = {
         title: document.getElementById('title').value,
         year: document.getElementById('year').value,
         director: document.getElementById('director').value,
         duration: document.getElementById('duration').value,
-        genre: document.getElementById('genre').value,
+        genre: document.getElementById("genre").value.split(","),
         rate: document.getElementById('rate').value,
         poster: document.getElementById('poster').value
     };
 
-    axios.post('http://localhost:3000/Movies', formData)
+    axios.post('http://localhost:3000/Movies', movie)
             .then(res => {
                 console.log('Pelicula creada correctamente.', res.data);
             })
             .catch(error => {
                 console.log(error);
-            });
+            });
 }
 
 document.getElementById('submitBtn').addEventListener('click', submitForm);
